@@ -14,9 +14,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
 }
 * {
     font-family: 'Source Sans Pro', sans-serif;
@@ -72,7 +69,7 @@ li a{
 	font-weight: lighter;
 	margin:0;
 }
-.first-aside .btn {
+.btn {
     margin: 3% 0;
     padding: 13px 15px;
     border: 0;
@@ -95,11 +92,11 @@ li a{
 }
 .second-aside h1 span {
     background: #fff;
-    padding: 25px;
+    padding: 3%;
     font-weight: lighter;	
 }
-.second-asdie p{
-	color: #8c8c8c;
+.second-aside p{
+	padding-top: 8%;
 }
 .third-aside{
 	overflow: hidden;
@@ -110,20 +107,20 @@ li a{
 	margin:0 250px;
 	color:white;
 }
-.third-section h1{
-
+.third-section > h1{
 	border-bottom: 4px solid #dee5e8;
 	line-height: 0;
-	padding-top: 30px;
+	padding-top: 7%;
 	
 }
 .third-section h1 span{
     padding: 25px;
+    font-size: 25px;
     font-weight: lighter;
     background-color: #30c3a6;	
 }
 .third-section .images{
-	margin-top:50px;
+	margin-top:10%;
 	align:center;
 }
 .third-section div.img {
@@ -134,7 +131,7 @@ li a{
 }
 
 
-.third-section div.img img {
+.third-section  .img img {
     width: 100%;
     height: auto;
 }
@@ -143,8 +140,66 @@ li a{
     padding: 15px;
     text-align: center;
 }
-footer{
 
+
+
+.forth-aside{
+	overflow: hidden;
+	background-color: #E84F40;
+	text-align: center;
+	padding: 5% 250px;
+
+}
+.forth-aside > h1{
+	border-bottom: 4px solid #dee5e8;
+	line-height: 0;
+	padding: 0;
+	margin-bottom: 7%;
+	color:white;
+}
+.forth-aside h1 span {
+    background: #E84F40;
+    padding: 25px;
+    font-weight: lighter;	
+}
+.forth-aside .inside-forth-aside{
+	padding: 0 50px;
+	text-align: center;
+	background: #FDFDF7;
+}
+.inside-forth-aside > h1{
+	color:white;
+	font-weight: lighter;
+
+}
+
+input, select, textarea {
+	width: 90%;
+	height: 34px;
+	padding: 6px 12px;
+	color: #555;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+textarea { 
+	height: 100px !important;
+	resize: vertical; 
+}
+
+.form-group { margin: 20px auto; }
+.form-group label {
+	padding: 3px 0;
+    color:  #8c8c8c;
+}
+.form-group input, .form-group textarea {
+	width: 100%;
+	height: 24px;
+}
+
+
+footer{
 	overflow: hidden;
 	padding: 15px;
 	background-color:#233446;
@@ -157,4 +212,23 @@ footer p{
 }
 footer img{
 	float:right;
+}
+
+
+
+@media(max-width: 841px) {
+	header { text-align: center; }
+
+	.logo { float: none; }
+	.logo img { display: none; }
+	.logo h1 { margin: 0px; }
+
+	.content {
+    float: left;
+    text-align: center;
+	}
+	footer{
+		text-align:center;
+		width: 100%;
+	}
 }
